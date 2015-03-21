@@ -4,8 +4,9 @@ A replacement for .Net's slow Delegate.DynamicInvoke. (Requires .Net 3.5 or newe
 Delegate.DynamicInvoke uses late binding which is quite slow. FastDelegate generates, compiles, and caches code that is *almost* as fast as a regular method call. It works with any method, instance or static, void return or otherwise. All methods are bound the same way:
 
 ```
-System.Reflection.MethodInfo myMethodInfo;
+using FastDelegate.Net;
 
+System.Reflection.MethodInfo myMethodInfo;
 // fill in myMethodInfo
 // ...
 
